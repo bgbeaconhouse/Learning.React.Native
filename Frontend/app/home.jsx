@@ -25,6 +25,11 @@ const Home = () => {
       <Text>Shop</Text>
       </Link>
       </TouchableOpacity>
+          <TouchableOpacity>
+            <Link href="/profiles">
+      <Text>Profiles</Text>
+      </Link>
+      </TouchableOpacity>
     </View>
   )
 }
