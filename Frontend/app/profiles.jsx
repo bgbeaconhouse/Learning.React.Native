@@ -1,5 +1,6 @@
-import { StyleSheet, Text, View, FlatList } from 'react-native'
+import { StyleSheet, Text, View, FlatList, TouchableOpacity } from 'react-native'
 import React, {useState, useEffect} from 'react'
+import {Link} from 'expo-router'
 
 const Profiles = () => {
     const [users, setUsers] = useState([])
@@ -19,6 +20,11 @@ useEffect(() => {
 }, []);    
   return (
     <View>
+            <TouchableOpacity>
+                    <Link href="/home">
+                <Text>Back</Text>
+                </Link>
+                </TouchableOpacity>
       <Text>Profiles</Text>
       <FlatList 
       data={users}

@@ -30,6 +30,11 @@ const Home = () => {
       <Text>Profiles</Text>
       </Link>
       </TouchableOpacity>
+          <TouchableOpacity>
+            <Link href="/createProfile">
+      <Text>Create Profile</Text>
+      </Link>
+      </TouchableOpacity>
     </View>
   )
 }
